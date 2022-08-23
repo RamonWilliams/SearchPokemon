@@ -5,7 +5,7 @@ const PokeCard = ({pokemon}) => {
     <div>
 
         {pokemon !== null ? (
-            <div>
+            <div className='pokemonInfo'>
                 <h2>{pokemon.name}</h2>
                 <img src={pokemon.sprites.front_shiny} alt={pokemon.name} />
             </div>): (<h2>Choose Pokemon</h2>)
